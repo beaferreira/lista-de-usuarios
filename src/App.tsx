@@ -1,4 +1,24 @@
 import { useState, useEffect } from "react";
+import { Container, Paper} from '@mui/material';
+import { createTheme } from '@mui/material/styles';
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      light: '#757ce8',
+      main: '#3f50b5',
+      dark: '#002884',
+      contrastText: '#fff',
+    },
+    secondary: {
+      light: '#ff7961',
+      main: '#f44336',
+      dark: '#ba000d',
+      contrastText: '#000',
+    },
+  },
+});
+
 
 const App = (props: any) => {
 	const [users, setUsers] = useState([
@@ -13,6 +33,15 @@ const App = (props: any) => {
 			.then((json) => {setUsers(json); setLoading(false)});
 	});
 	return (
+
+		
+
+			<Paper sx={{
+				width: '200px',
+				backgroundColor: '#fce4ec',
+				marginTop: '2rem',
+				padding: '1rem',
+			}}>
 		<div className="App">
 			<h1>Lista de usuários</h1>
 			<div className="card">
@@ -24,6 +53,8 @@ const App = (props: any) => {
 				</ul>
 			</div>
 		</div>
+			</Paper>
+	
 	);
 };
 
