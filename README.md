@@ -1,4 +1,4 @@
-# Prática de Programação Orientada Serviços - 26/07/2022
+# Prática de Programação Orientada Serviços
 
 Este repositório foi criado para registrar remotamente a atividades prática da matéria de Programação Orientada a 
 Serviços: Aprendendo a consumir uma API utilizando fetch.
